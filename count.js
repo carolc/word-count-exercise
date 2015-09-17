@@ -6,3 +6,26 @@
 // 6. If the char count is between 141 and 160 chars, display Textable
 // 7. If the char count is more than 160 chars, display Just Send an Email
 
+jQuery(function(){
+
+var $myTextArea=$("textarea");
+var $myDiv1=$(".char-count");
+
+
+function displayTweet(){
+    var myCount=$myTextArea.val().length+1;
+    console.log(myCount);
+    $(".char-count").text(myCount);
+}
+
+
+
+$myTextArea.keydown(displayTweet);
+
+
+
+
+
+
+
+})
